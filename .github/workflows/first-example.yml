@@ -6,14 +6,13 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-            -name: Checkout Repo
-             -uses: actions/checkout@v6
-        steps:
-            - name: Welcome message
-              run: echo "My first Gtihub Actions Job"
+        - name: Checkout Repo
+          uses: actions/checkout@v6
+        - name: Welcome message
+          run: echo "My first Gtihub Actions Job"
 
-            - name: List files
-              run: ls
+        - name: List files
+          run: ls
 
-            - name: Read file
-              run: cat README.md
+        - name: Read file
+          run: cat README.md
